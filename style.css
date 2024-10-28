@@ -1,0 +1,23 @@
+/* Adicione ao seu style.css */
+#about-me {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    white-space: pre-wrap; /* Mantém os espaços e quebras de linha */
+}
+
+#about-me::after {
+    content: '|';
+    animation: blink-cursor 0.7s step-end infinite;
+    margin-left: 2px;
+}
+
+@keyframes blink-cursor {
+    from, to {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+
